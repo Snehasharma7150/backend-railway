@@ -1,0 +1,28 @@
+{
+  "name": "sf-zd-backend",
+  "version": "1.0.0",
+  "description": "Salesforce <-> Zendesk sync backend",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "migrate": "node scripts/migrate.js",
+    "seed": "node scripts/seed.js"
+  },
+  "dependencies": {
+    "axios": "^1.7.2",
+    "better-sqlite3": "^9.6.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-async-errors": "^3.1.1",
+    "jsforce": "^1.11.1",
+    "morgan": "^1.10.0",
+    "node-zendesk": "^4.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
